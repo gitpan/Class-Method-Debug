@@ -3,8 +3,10 @@ use strict;
 use warnings;
 
 package Class::Method::Debug;
-our $VERSION = '1.100690';
-# ABSTRACT: trace who is calling accessors
+BEGIN {
+  $Class::Method::Debug::VERSION = '1.101420';
+}
+# ABSTRACT: Trace who is calling accessors
 
 use Class::Method::Modifiers qw(install_modifier);
 use Devel::StackTrace;
@@ -76,11 +78,11 @@ __END__
 
 =head1 NAME
 
-Class::Method::Debug - trace who is calling accessors
+Class::Method::Debug - Trace who is calling accessors
 
 =head1 VERSION
 
-version 1.100690
+version 1.101420
 
 =head1 SYNOPSIS
 
@@ -166,6 +168,25 @@ and warns it.
 =head1 INSTALLATION
 
 See perlmodinstall for information and options on installing Perl modules.
+
+=head1 BUGS AND LIMITATIONS
+
+No bugs have been reported.
+
+Please report any bugs or feature requests through the web interface at
+L<http://rt.cpan.org/Public/Dist/Display.html?Name=Class-Method-Debug>.
+
+=head1 AVAILABILITY
+
+The latest version of this module is available from the Comprehensive Perl
+Archive Network (CPAN). Visit L<http://www.perl.com/CPAN/> to find a CPAN
+site near you, or see
+L<http://search.cpan.org/dist/Class-Method-Debug/>.
+
+The development version lives at
+L<http://github.com/hanekomu/Class-Method-Debug/>.
+Instead of sending patches, please fork this project using the standard git
+and github infrastructure.
 
 =head1 AUTHOR
 
